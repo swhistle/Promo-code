@@ -11,15 +11,24 @@
 	&__column {
 		width: 30%;		
 		min-height: 200px;
-		padding: 0 3%;
+		padding: 2% 3%;
 		box-sizing: border-box;
 		text-align: center;
-		background-color: @color1;
-
-		outline: 2px solid red;
+		background-color: @color8;
+		box-shadow: 0 0 10px 0 rgba(45, 45, 68, 0.5);
+		position: relative;
 
 		b {
-			font-size: @size-6;
+			font-size: @size-8;
+			
+
+			&::after {
+				.after();
+				background-color: @color3;
+				top: 65px;
+				left: 45%;
+				transform: rotate(45deg);
+			}
 		}	
 
 		p {

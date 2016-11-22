@@ -16,7 +16,7 @@
 		padding-top: 15px;
 		box-sizing: border-box;
 		color: @color1;
-		font-size: @size-6;
+		font-size: @size-9;
 		line-height: @l-height-4;
 
 		a {
@@ -39,11 +39,28 @@
 		box-shadow: 0 0 5px 0 rgba(231, 200, 190, 0.5);
 		border-radius: 5px;
 		color: @color1;
-		font-size: 36px;
+		font-size: @size-12;
+		position: relative;
+
+		&::after {
+			.after();
+			width: 150px;
+			height: 70px;
+			border-radius: 10px;
+			background-color: @color6;
+			top: 15px;
+			left: 125%;
+			transform: rotate(7deg);
+			content: "-800р!";
+			color: @color1;
+			padding-top: 20px;
+			box-sizing: border-box;
+		}
 	}
 
 	small {
 		margin-top: auto;
 		color: @color7;
+		text-align: center;
 		}	
 }
