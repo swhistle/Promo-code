@@ -1,15 +1,30 @@
 .features {
 	width: auto;
-	min-height: 500px;
+	min-height: 300px;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	color: @color3;
 	.flex-type-2();
 
-	background-color: @color1;
+	
 
 	&__column {
-		width: 30%;
-		min-height: 400px; 
-		outline: 2px solid red;		
+		width: 30%;		
+		min-height: 200px;
+		padding: 0 3%;
+		box-sizing: border-box;
+		text-align: center;
+		background-color: @color1;
+
+		outline: 2px solid red;
+
+		b {
+			font-size: @size-6;
+		}	
+
+		p {
+			padding-top: 60px;
+			font-size: @size-5;
+		}
 	}
 }
