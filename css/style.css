@@ -1,0 +1,118 @@
+html,
+body {
+  width: auto;
+  min-height: 550px;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  line-height: 22px;
+  /*letter-spacing: 1px;
+    word-spacing: -3px;*/
+  color: #283136;
+  font-weight: normal;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #ffffff;
+}
+main {
+  color: #d7dcde;
+}
+.wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.page-header {
+  width: auto;
+  min-height: 210px;
+  background-color: #2d2d44;
+}
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  min-height: 60px;
+  background-color: #2d2d44;
+}
+.page-header-container__logo {
+  width: 250px;
+  height: 125px;
+}
+.page-header-container__title {
+  width: 500px;
+  min-height: 60px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 27px;
+  line-height: 36px;
+}
+.page-header-container__title a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.page-header-container__promo {
+  width: 400px;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid #3f3ccb;
+  background-color: #3f3ccb;
+  box-shadow: 0 0 5px 0 rgba(231, 200, 190, 0.5);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 36px;
+}
+.page-header-container small {
+  margin-top: auto;
+  color: #f28284;
+}
+.intro {
+  width: auto;
+  min-height: 500px;
+  background-color: #312885;
+}
+.intro p {
+  margin: 0;
+  padding: 0;
+  padding: 0 5%;
+}
+.intro__course-1 {
+  padding: 0 5%;
+}
+.intro__course-1 img {
+  padding: 2% 15%;
+  margin-bottom: 20px;
+}
+.intro a {
+  text-decoration: none;
+  color: #e74c3c;
+}
+.features {
+  width: auto;
+  min-height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+.features__column {
+  width: 30%;
+  min-height: 400px;
+  outline: 2px solid red;
+}
+.page-footer {
+  width: auto;
+  min-height: 130px;
+  background-color: #2d2d44;
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
