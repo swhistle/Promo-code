@@ -1,0 +1,36 @@
+.addition {
+		width: auto;
+		min-height: 100px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		background-color: @color8;
+
+	strong {
+		display: block;
+		font-size: @size-7;
+		margin-bottom: 20px;
+	}
+
+	b {
+		display: block;
+		text-transform: uppercase;
+	}
+
+	li {
+		margin-bottom: 15px;
+		list-style-type: none;
+		position: relative;
+
+		&::before {
+			.before();
+			width: 15px;
+			height: 15px;
+			background-color: black;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+		}
+}

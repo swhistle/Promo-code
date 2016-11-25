@@ -82,15 +82,17 @@
 	display: block;
 	content: "";
 	width: @width;
-	height: @height;	
+	height: @height;
+	top: 0px;
+	left: 0%;	
 }
 
 .after(@width: 20px, @height: 20px) {
 	display: block;
 	content: "";
 	position: absolute;
-	width: 20px;
-	height: 20px;
+	width: @width;
+	height: @height;
 	top: 0px;
 	left: 0%;
 }
@@ -109,3 +111,7 @@
 	margin: 0;
 }
 
+.a() {
+	text-decoration: none;
+	color: inherit;
+}

@@ -10,13 +10,23 @@ body {
   line-height: 22px;
   /*letter-spacing: 1px;
     word-spacing: -3px;*/
-  color: #283136;
+  color: #2d2d44;
   font-weight: normal;
   font-family: 'Roboto Mono', monospace;
   background-color: #ffffff;
 }
-main {
-  color: #d7dcde;
+.btn {
+  display: block;
+  box-sizing: border-box;
+  width: 140px;
+  height: 37px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  padding-top: 7px;
+  font-size: 36px;
 }
 .wrapper {
   max-width: 950px;
@@ -59,11 +69,10 @@ main {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 50px;
-  padding-top: 20px;
   text-align: center;
   box-sizing: border-box;
-  border: 2px solid #3f3ccb;
-  background-color: #3f3ccb;
+  border: 2px solid #4eb543;
+  background-color: #4eb543;
   box-shadow: 0 0 5px 0 rgba(231, 200, 190, 0.5);
   border-radius: 5px;
   color: #ffffff;
@@ -99,6 +108,7 @@ main {
   width: auto;
   min-height: 500px;
   background-color: #312885;
+  color: #d7dcde;
 }
 .intro p {
   margin: 0;
@@ -134,7 +144,7 @@ main {
   box-sizing: border-box;
   text-align: center;
   background-color: #f5f5f5;
-  box-shadow: 0 0 10px 0 rgba(45, 45, 68, 0.5);
+  box-shadow: 0 0 10px 0 rgba(45, 45, 68, 0.25), 0 10px 10px 0 rgba(45, 45, 68, 0.25);
   position: relative;
 }
 .features__column b {
@@ -144,11 +154,13 @@ main {
   display: block;
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 13px;
+  height: 13px;
   top: 0px;
   left: 0%;
-  background-color: #2d2d44;
+  border: 5px solid #2d2d44;
+  background-color: #f29f97;
+  border-radius: 2px;
   top: 65px;
   left: 45%;
   transform: rotate(45deg);
@@ -157,10 +169,173 @@ main {
   padding-top: 60px;
   font-size: 18px;
 }
+.features__column a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+.features__list {
+  width: auto;
+  margin-top: 50px;
+  min-height: 200px;
+}
+.features__list strong {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.features__list b {
+  display: block;
+  text-transform: uppercase;
+}
+.features__list li {
+  margin-bottom: 15px;
+  list-style-type: none;
+  position: relative;
+}
+.features__list li::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0%;
+  width: 5px;
+  height: 5px;
+  background-color: #2d2d44;
+  border: 5px solid #f29f97;
+  border-radius: 50%;
+  top: 7px;
+  left: -30px;
+}
+.features__list a {
+  text-decoration: none;
+  color: inherit;
+}
+.addition {
+  width: auto;
+  min-height: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f5f5f5;
+}
+.addition strong {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.addition b {
+  display: block;
+  text-transform: uppercase;
+}
+.addition li {
+  margin-bottom: 15px;
+  list-style-type: none;
+  position: relative;
+}
+.addition li::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0%;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+}
+.addition a {
+  text-decoration: none;
+  color: inherit;
+}
 .page-footer {
   width: auto;
   min-height: 130px;
-  background-color: #2d2d44;
+  background-color: #2b2f38;
+  padding-top: 1px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.page-footer__social {
+  width: auto;
+  min-height: 125px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: inherit;
+  padding: 25px;
+  margin-top: 30px;
+  color: #d7dcde;
+}
+.page-footer span {
+  display: block;
+  margin-top: auto;
+}
+.page-footer a {
+  text-decoration: none;
+  color: inherit;
+}
+.page-footer a:hover {
+  color: #f29f97;
+}
+.page-footer a:active {
+  color: #e74c3c;
+}
+.social-links {
+  display: block;
+  width: 155px;
+  min-height: 110px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.social-links__container {
+  position: relative;
+  display: block;
+  width: 45px;
+  min-height: 45px;
+  list-style: none;
+  border-radius: 50%;
+}
+.social-links__container1 {
+  position: relative;
+  display: block;
+  width: 155px;
+  min-height: 60px;
+  list-style: none;
+  border-radius: 50%;
+}
+.social-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  font-size: 0;
+}
+.social-link--ha {
+  background: url("../img/logo-htmlacademy.jpg") no-repeat;
+  background-size: 150px 52px;
+}
+.social-link--vk {
+  background: url("../img/spritesheet.png") no-repeat;
+  background-position: -7px -2px;
+}
+.social-link--fb {
+  background: url("../img/spritesheet.png") no-repeat;
+  background-position: -55px -6px;
+}
+.social-link--in {
+  background: url("../img/spritesheet.png") no-repeat;
+  background-position: -101px -6px;
 }
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
