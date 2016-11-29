@@ -4,9 +4,29 @@
 	padding-top: 50px;
 	padding-bottom: 50px;
 	color: @color3;
-	.flex-type-2();
 
-	
+	strong {
+			display: block;
+			font-size: @size-9;
+			margin-bottom: 50px;
+
+			a {
+				color: inherit;
+				text-decoration: none;
+
+				&:hover {
+					color: @color4;
+				}
+
+				&:active {
+					color: @color5;
+				}
+			}
+		}
+
+	&__container {
+		.flex-type-2();
+	}
 
 	&__column {
 		width: 30%;		
@@ -20,8 +40,7 @@
 		position: relative;
 
 		b {
-			font-size: @size-8;
-			
+			font-size: @size-8;			
 
 			&::after {
 				.after(13px, 13px);
@@ -35,14 +54,24 @@
 		}	
 
 		p {
-			padding-top: 60px;
+			padding-top: 50px;
 			font-size: @size-5;
+			line-height: @l-height-7;
+
 		}
 
 		a {
 			text-decoration: none;
 			color: inherit;
 			font-weight: bold;
+
+			&:hover {
+				color: @color4;
+			}
+
+			&:active {
+				color: @color5;
+			}
 		}
 	}
 
@@ -82,6 +111,15 @@
 		a {
 			text-decoration: none;
 			color: inherit;
+			
+			&:hover {
+					color: @color4;
+				}
+
+			&:active {
+				color: @color5;
 			}
+
+		}
 	}
 }

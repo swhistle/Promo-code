@@ -43,6 +43,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 25px;
+  padding-bottom: 15px;
   min-height: 60px;
   background-color: #2d2d44;
 }
@@ -51,17 +52,24 @@ body {
   height: 125px;
 }
 .page-header-container__title {
-  width: 500px;
+  width: 60%;
   min-height: 60px;
   padding-top: 15px;
   box-sizing: border-box;
   color: #ffffff;
-  font-size: 27px;
-  line-height: 36px;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
 }
 .page-header-container__title a {
   text-decoration: none;
   color: #ffffff;
+}
+.page-header-container__title a:hover {
+  color: #e92529;
+}
+.page-header-container__title a:active {
+  color: #f28284;
 }
 .page-header-container__promo {
   width: 400px;
@@ -69,6 +77,7 @@ body {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 50px;
+  padding-top: 20px;
   text-align: center;
   box-sizing: border-box;
   border: 2px solid #4eb543;
@@ -107,25 +116,87 @@ body {
 .intro {
   width: auto;
   min-height: 500px;
-  background-color: #312885;
+  background-color: #342c81;
   color: #d7dcde;
+  /*outline: 2px solid red;*/
+
+}
+.intro__courses {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 .intro p {
   margin: 0;
   padding: 0;
-  padding: 0 5%;
+  padding: 0 8%;
   text-align: center;
 }
-.intro__course-1 {
-  padding: 0 5%;
+.intro__course {
+  width: 45%;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  /*outline: 2px solid white;*/
+
+  background-color: #312885;
+  box-shadow: 0 0 5px 1px #3f3ccb;
 }
-.intro__course-1 img {
-  padding: 2% 15%;
-  margin-bottom: 20px;
+.intro__course--1-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.intro__course--1-2 p {
+  margin-top: 20px;
+}
+.intro__course--3-4 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.intro__course--3-4 p {
+  margin-top: 20px;
+}
+.intro__course img {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 1px 1px #3d3491;
+}
+.intro__course img:hover {
+  opacity: 0.7;
+}
+.intro__img-container1 {
+  width: 100%;
+  margin: 0 auto;
+  height: 220px;
+  /*outline: 2px solid red;*/
+
+}
+.intro__img-container2 {
+  width: 50%;
+  height: 220px;
+  /*outline: 2px solid red;*/
+
+}
+.intro__img-container2:first-of-type {
+  /*box-shadow: 2px 0 0 0 rgba(61, 52, 145, 1);*/
+
 }
 .intro a {
   text-decoration: none;
   color: #e74c3c;
+}
+.intro a:hover {
+  text-decoration: underline;
+}
+.intro a:active {
+  color: #f29f97;
 }
 .features {
   width: auto;
@@ -133,6 +204,23 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   color: #2d2d44;
+}
+.features strong {
+  display: block;
+  font-size: 27px;
+  margin-bottom: 50px;
+}
+.features strong a {
+  color: inherit;
+  text-decoration: none;
+}
+.features strong a:hover {
+  color: #e74c3c;
+}
+.features strong a:active {
+  color: #f29f97;
+}
+.features__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -166,13 +254,20 @@ body {
   transform: rotate(45deg);
 }
 .features__column p {
-  padding-top: 60px;
+  padding-top: 50px;
   font-size: 18px;
+  line-height: 24px;
 }
 .features__column a {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
+}
+.features__column a:hover {
+  color: #e74c3c;
+}
+.features__column a:active {
+  color: #f29f97;
 }
 .features__list {
   width: auto;
@@ -213,6 +308,12 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.features__list a:hover {
+  color: #e74c3c;
+}
+.features__list a:active {
+  color: #f29f97;
+}
 .addition {
   width: auto;
   min-height: 100px;
@@ -234,21 +335,19 @@ body {
   list-style-type: none;
   position: relative;
 }
-.addition li::before {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100px;
-  height: 100px;
-  top: 0px;
-  left: 0%;
-  width: 15px;
-  height: 15px;
-  background-color: black;
-}
 .addition a {
   text-decoration: none;
   color: inherit;
+}
+.addition__promo {
+  width: 25%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-top: 13px;
+  font-size: 27px;
+  background-color: #e8e8e8;
+  box-shadow: 0 0 5px 1px #4eb543;
 }
 .page-footer {
   width: auto;
@@ -258,7 +357,7 @@ body {
   box-sizing: border-box;
   color: #ffffff;
 }
-.page-footer__social {
+.footer-info {
   width: auto;
   min-height: 125px;
   box-sizing: border-box;
@@ -268,32 +367,57 @@ body {
   align-items: flex-start;
   background-color: inherit;
   padding: 25px;
-  margin-top: 30px;
   color: #d7dcde;
+  /*outline: 2px solid white;*/
+
 }
-.page-footer span {
+.footer-info span {
   display: block;
+  width: 250px;
   margin-top: auto;
+  /*outline: 2px solid red;*/
+
 }
-.page-footer a {
+.footer-info__social {
+  width: 60%;
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-right: 20px;
+  /*outline: 2px solid red;*/
+
+}
+.footer-info__social span {
+  width: auto;
+  text-align: center;
+  line-height: 36px;
+}
+.footer-info__social-links {
+  margin: 0 auto;
+  margin-top: 20px;
+  /*outline: 2px solid red;*/
+
+}
+.footer-info a {
   text-decoration: none;
   color: inherit;
 }
-.page-footer a:hover {
+.footer-info a:hover {
   color: #f29f97;
 }
-.page-footer a:active {
+.footer-info a:active {
   color: #e74c3c;
 }
 .social-links {
   display: block;
-  width: 155px;
-  min-height: 110px;
+  width: 320px;
+  min-height: 80px;
   padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: flex-end;
+  /*outline: 2px solid white;*/
+
 }
 .social-links__container {
   position: relative;
@@ -302,14 +426,26 @@ body {
   min-height: 45px;
   list-style: none;
   border-radius: 50%;
+  /*outline: 2px solid white;*/
+
+  opacity: 0.5;
+}
+.social-links__container:hover {
+  opacity: 1;
 }
 .social-links__container1 {
   position: relative;
   display: block;
   width: 155px;
-  min-height: 60px;
+  min-height: 57px;
   list-style: none;
   border-radius: 50%;
+  /*outline: 2px solid white;*/
+
+  margin-right: 15px;
+}
+.social-links__container1:hover {
+  opacity: 0.5;
 }
 .social-link {
   display: block;
