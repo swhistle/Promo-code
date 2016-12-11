@@ -10,12 +10,25 @@
 
 	/*outline: 2px solid white;*/
 
+	@media screen and (max-width: 1000px) {
+		display: block;
+	}
+
 	span {
 		display: block;
+	}
+
+	> span {
 		width: 250px;
 		margin-top: auto;
+
+
 		/*outline: 2px solid red;*/
 
+		@media screen and (max-width: 1000px) {
+			margin-left: auto;
+			margin-right: 100px;
+		}
 	}
 
 
@@ -26,10 +39,23 @@
 		padding-right: 20px;
 		/*outline: 2px solid red;*/
 
+		@media screen and (max-width: 1000px) {
+			.flex-type-2();
+			align-items: center;
+			width: auto;
+			margin-bottom: 50px;
+		}
+
 		span {
 			width: auto;
 			text-align: center;
 			line-height: @l-height-4;
+
+			@media screen and (max-width: 1000px) {
+				width: 40%;
+				padding-right: 20px;
+				text-align: left;
+			}
 		}
 
 	}
@@ -39,6 +65,10 @@
 		margin-top: 20px;
 		
 		/*outline: 2px solid red;*/
+
+		@media screen and (max-width: 1000px) {
+			margin-top: 0;
+		}
 	}
 
 	a {

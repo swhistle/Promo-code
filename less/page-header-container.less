@@ -8,7 +8,33 @@
 
 	&__logo {
 		width: 250px;
-		height: 125px;	
+		height: 125px;
+		position: relative;	
+
+		&::after {	
+			display: none;				
+
+			@media screen and (max-width: 1000px) {				
+				.after();
+				width: 150px;
+				height: 70px;
+				border-radius: 10px;
+				background-color: @color6;
+				top: 0px;
+				left: 110px;
+				transform: rotate(-10deg);
+				content: "-800р!";
+				color: @color1;
+				padding-top: 20px;
+				text-align: center;
+				color: @color1;
+				font-size: @size-12;
+				box-sizing: border-box;
+				top: 140px;
+				left: 80px;
+				transform: rotate(-10deg);			
+			}
+		}
 	}
 
 	&__title {
@@ -52,6 +78,15 @@
 		font-size: @size-12;
 		position: relative;
 
+		@media screen and (max-width: 1000px) {
+			margin-left: 45%;
+			margin-top: 40px;
+			width: 350px;
+			height: 60px;
+			font-size: @size-10;
+			padding-top: 16px;
+		}
+
 		&::after {
 			.after();
 			width: 150px;
@@ -60,11 +95,15 @@
 			background-color: @color6;
 			top: 15px;
 			left: 125%;
-			transform: rotate(7deg);
+			transform: rotate(10deg);
 			content: "-800р!";
 			color: @color1;
 			padding-top: 20px;
 			box-sizing: border-box;
+
+			@media screen and (max-width: 1000px) {			
+			display: none;
+			}
 		}
 	}
 
