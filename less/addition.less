@@ -5,11 +5,21 @@
 		padding-bottom: 30px;
 		background-color: @color8;	
 
+		@media @mobile-width3 {
+			padding-top: 20px;
+			padding-bottom: 15px;
+			background-color: @color5;
+		}
+
 	b {
 		display: block;
 		text-transform: uppercase;
 		text-align: center;
 		line-height: @l-height-5;
+
+		@media @mobile-width3 {
+			line-height: @l-height-7;
+		}
 	}
 
 	&__promo {
@@ -27,6 +37,10 @@
 			height: 40px;
 			padding-top: 8px;
 			font-size: @size-8;
+		}
+
+		@media @mobile-width3 {
+			margin-top: 20px;
 		}
 	}
 }

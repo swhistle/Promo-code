@@ -7,6 +7,11 @@
 	align-items: flex-end;
 	/*outline: 2px solid white;*/
 
+	@media @mobile-width2 {
+		width: 170px;
+		margin-top: 30px;
+	}
+
 
 	&__container {
 		position: relative;
@@ -32,6 +37,10 @@
 		border-radius: 50%;
 		/*outline: 2px solid white;*/
 		margin-right: 15px;
+
+		@media @mobile-width2 {		
+		margin-bottom: 10px;
+		}
 
 		&:hover {
 			opacity: 0.5;
