@@ -5,19 +5,52 @@
 	min-height: 60px;
 	background-color: @color3;
 
+	@media @tablet-width2 {
+		.flex-type-4();
+		border: 2px solid red;
+	}
+
+	&::after {
+		display: none;
+
+		@media @tablet-width2 {
+			.after();
+			width: 150px;
+			height: 60px;
+			border-radius: 10px;
+			background-color: @color6;			
+			transform: rotate(-10deg);
+			content: "-800р!";
+			color: @color1;
+			padding-top: 16px;
+			text-align: center;
+			color: @color1;
+			font-size: @size-10;
+			box-sizing: border-box;
+			top: 50px;
+			left: 65%;
+			transform: rotate(10deg);
+		}
+
+		@media @mobile-width1 {
+			left: 55%;
+			transform: rotate(-10deg);
+		}
+	}
+
 
 	&__logo {
 		width: 250px;
 		height: 125px;
-		position: relative;	
+		position: relative;		
 
 		&::after {	
 			display: none;				
 
-			@media screen and (max-width: 1000px) {				
+			@media @tablet-width1 {				
 				.after();
 				width: 150px;
-				height: 70px;
+				height: 60px;
 				border-radius: 10px;
 				background-color: @color6;
 				top: 0px;
@@ -25,14 +58,18 @@
 				transform: rotate(-10deg);
 				content: "-800р!";
 				color: @color1;
-				padding-top: 20px;
+				padding-top: 16px;
 				text-align: center;
 				color: @color1;
-				font-size: @size-12;
+				font-size: @size-10;
 				box-sizing: border-box;
 				top: 140px;
 				left: 80px;
 				transform: rotate(-10deg);			
+			}
+
+			@media @tablet-width2 {
+				display: none;
 			}
 		}
 	}
@@ -46,6 +83,10 @@
 		font-size: @size-10;
 		line-height: @l-height-6;
 		text-align: center;
+
+		@media @tablet-width2 {
+			width: auto;
+		}
 
 		a {
 			text-decoration: none;
@@ -78,13 +119,20 @@
 		font-size: @size-12;
 		position: relative;
 
-		@media screen and (max-width: 1000px) {
+		@media @tablet-width1 {
 			margin-left: 45%;
 			margin-top: 40px;
 			width: 350px;
 			height: 60px;
 			font-size: @size-10;
 			padding-top: 16px;
+		}
+
+		@media @tablet-width2 {
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 0;
+			margin-bottom: 20px;
 		}
 
 		&::after {
@@ -101,7 +149,7 @@
 			padding-top: 20px;
 			box-sizing: border-box;
 
-			@media screen and (max-width: 1000px) {			
+			@media @tablet-width1 {			
 			display: none;
 			}
 		}

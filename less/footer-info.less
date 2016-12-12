@@ -10,7 +10,7 @@
 
 	/*outline: 2px solid white;*/
 
-	@media screen and (max-width: 1000px) {
+	@media @tablet-width1 {
 		display: block;
 	}
 
@@ -25,9 +25,13 @@
 
 		/*outline: 2px solid red;*/
 
-		@media screen and (max-width: 1000px) {
+		@media @tablet-width1 {
 			margin-left: auto;
 			margin-right: 100px;
+		}
+
+		@media @tablet-width2 {
+			margin-right: 0px;
 		}
 	}
 
@@ -39,11 +43,15 @@
 		padding-right: 20px;
 		/*outline: 2px solid red;*/
 
-		@media screen and (max-width: 1000px) {
+		@media @tablet-width1 {
 			.flex-type-2();
 			align-items: center;
 			width: auto;
 			margin-bottom: 50px;
+		}
+
+		@media @tablet-width2 {
+			display: block;
 		}
 
 		span {
@@ -51,10 +59,15 @@
 			text-align: center;
 			line-height: @l-height-4;
 
-			@media screen and (max-width: 1000px) {
+			@media @tablet-width1 {
 				width: 40%;
 				padding-right: 20px;
 				text-align: left;
+			}
+
+			@media @tablet-width2 {
+				width: auto;
+				text-align: center;
 			}
 		}
 
@@ -66,8 +79,12 @@
 		
 		/*outline: 2px solid red;*/
 
-		@media screen and (max-width: 1000px) {
+		@media @tablet-width1 {
 			margin-top: 0;
+		}
+
+		@media @tablet-width2 {
+			margin-top: 10px;
 		}
 	}
 
